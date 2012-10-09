@@ -8,7 +8,9 @@ int main() {
 	cin >> x;
 	cout << "Enter 2nd Value in Integer : ";
 	cin >> y;
-	cout << endl << "Addition : " << x+y << endl << "Subtraction : " << x-y << endl << "Multiplication : " << x*y << endl;
+	cout << endl << "Addition : " << x+y << endl;
+	cout << "Subtraction : " << x-y << endl;
+	cout << "Multiplication : " << x*y << endl;
 	system("pause");
 	return 0;
 
