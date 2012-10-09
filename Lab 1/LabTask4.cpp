@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	int n;
-		float temp,res;
+	float temp,res;
 	cout << "What do you want to do?" << endl;
 	cout << "[1] Convert Fahrenheit to Celsius" << endl;
 	cout << "[2] Convert Celsius to Fahrenheit" << endl;
