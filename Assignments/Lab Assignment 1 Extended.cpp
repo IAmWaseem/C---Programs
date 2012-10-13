@@ -24,7 +24,7 @@ int main() {
 	}
 	else if((pow(b,2)-4*a*c)<0) {
 		cout << "Imaginary and 2 Roots" << endl << endl;
-		im = sqrt(-(pow(b,2)-4*a*c));
+		im = sqrt(-(pow(b,2)-4*a*c))/(2*a);
 		cout << "X = " << -b/(2*a) << " + " << im << "i" << endl;
 		cout << "X = " << -b/(2*a) << " - " << im << "i" << endl;
 	}
