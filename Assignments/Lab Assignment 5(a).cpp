@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main() { //Wajeeh :P
 	float x,y,b,m;
 	cout << "Enter value of x: ";
 	cin >> x;
