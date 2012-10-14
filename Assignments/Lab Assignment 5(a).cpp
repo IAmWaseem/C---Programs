@@ -1,18 +1,18 @@
-#include <iostream> // Pre-processor Directives
-#include <conio.h> // Pre-processor Directives
+#include <iostream>
+#include <conio.h>
 
-using namespace std; // Using all functions from namespace std
+using namespace std;
 
 int main() {
-	float x,y,b,m; // Initialized variables to be used
+	float x,y,b,m;
 	cout << "Enter value of x: ";
-	cin >> x; // Prompts user to enter the value of x
+	cin >> x;
 	cout << "Enter value of y: ";
-	cin >> y; // Prompts user to enter the value of y
+	cin >> y;
 	cout << "Enter value of b: ";
-	cin >> b; // Prompts user to enter the value of b
-	m = (y-b)/x; // Calculates the Actual Slope from formula
-	cout << endl << "Slope of the line is " << m << endl; // Displays the Slope
-	getch(); // Pauses the Program after successful execution
+	cin >> b;
+	m = (y-b)/x;
+	cout << endl << "Slope of the line is " << m << endl;
+	getch();
 	return 0;
 }
