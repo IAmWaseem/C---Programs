@@ -6,7 +6,10 @@ using namespace std;
 int main()
 {
 	int a, bat1, bat2, bat3, bat4, bat5, error;
-	error = 2;
+	int score1, score2;
+	score1 = 0;
+	score2 = 0;
+	error = 0;
 
 	cout << "Enter the number of players: ";
 	cin >> a;
@@ -57,13 +60,13 @@ int main()
 			default :
 				{
 					cout << "Wrong value entered" << endl;
-					error = 0;
+					error = 1;
 					break;
 				}
 			
 			}
 
-			if (error != 0)
+			if (error == 1)
 				{cout << "IF your score is between (1 - 100) press 1" << endl;
 				cout << "IF your score is betweem (101 - 200) press 2" << endl;
 				cout << "IF your score is between (201 - 500) press 3" << endl;
@@ -83,6 +86,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat1 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter scrore for second battle" << endl;
@@ -101,6 +105,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat2 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter score for third battle" << endl;
@@ -119,6 +124,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat3 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}	
 				cout << "Enter score for fourth battle" << endl;
@@ -137,6 +143,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat4 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter score for fifth battle" << endl;
@@ -155,6 +162,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat5 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				if (bat1 == 0 || bat2 == 0 || bat3 == 0 || bat4 == 0 || bat5 == 0)
@@ -186,24 +194,28 @@ int main()
 		    switch (team1)
 			{
 			case 'A': 
+			case 'a':
 				{
 					cout << "Player 1 chose  ALPHA team\n\n\n" << endl;
 					break;
 				}
 
 			case 'B':
+			case 'b':
 				{
 					cout << "Player 1 chose BRAVO team\n\n\n" << endl;
 					break;
 				}
 
 			case 'C':
+			case 'c':
 				{
 					cout << "Player 1 chose CHARLIE team\n\n\n" << endl;
 					break;
 				}
 
 			case 'D':
+			case 'd':
 				{
 					cout << "Player 1 chose DELTA team\n\n\n" << endl;
 					break;
@@ -213,6 +225,7 @@ int main()
 				{
 					cout << "Wrong value entered\n\n\n" << endl;
 					error = 0;
+					exit (EXIT_FAILURE);
 					break;
 				}
 			
@@ -227,25 +240,29 @@ int main()
 			cin >> team2;
 			switch (team2)
 			{
-			case 'A': 
+			case 'A':
+			case 'a':
 				{
 					cout << "Player 2  chose APLHA TEAM\n\n\n" << endl;
 					break;
 				}
 
 			case 'B':
+			case 'b':
 				{
 					cout << "Player 2  chose BRAVO team\n\n\n" << endl;
 					break;
 				}
 
 			case 'C':
+			case 'c':
 				{
 					cout << "Player 2  chose CHARLIE team\n\n\n" << endl;
 					break;
 				}
 
 			case 'D':
+			case 'd':
 				{
 					cout << "Player 2  chose DELTA team\n\n\n" << endl;
 					break;
@@ -255,6 +272,7 @@ int main()
 				{
 					cout << "Wrong value entered\n\n\n" << endl;
 					error = 1;
+					exit (EXIT_FAILURE);
 					break;
 				}
 			
@@ -281,6 +299,7 @@ int main()
 						break;}
 					default:
 						{cout << "Wrong value entered" << endl;
+						exit (EXIT_FAILURE);
 						bat1 = 0;
 						break;}
 					}
@@ -299,6 +318,7 @@ int main()
 						break;}
 					default:
 						{cout << "Wrong value entered" << endl;
+						exit (EXIT_FAILURE);
 						bat2 = 0;
 						break;}
 					}
@@ -317,6 +337,7 @@ int main()
 						break;}
 					default:
 						{cout << "Wrong value entered" << endl;
+						exit (EXIT_FAILURE);
 						bat3 = 0;
 						break;}
 					}	
@@ -336,6 +357,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat4 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter score for fifth battle" << endl;
@@ -354,12 +376,14 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat5 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
+				score1 = (bat1+bat2+bat3+bat4+bat5);
 				if (bat1 == 0 || bat2 == 0 || bat3 == 0 || bat4 == 0 || bat5 == 0)
 					{cout << "SCORE NOT POSSIBLE SINCE WRONG VALUE WAS ENTERED!" << endl;}
 				else 
-					{cout << "PLAYER 1 YOUR TOTAL SCORE IS: " << (bat1+bat2+bat3+bat4+bat5) << endl;}
+					{cout << "PLAYER 1 YOUR TOTAL SCORE IS: " << score1 << endl;}
 
 
 				cout << "PLAYER 2 ENTER YOUR SCORE!" << endl;
@@ -379,6 +403,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat1 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter scrore for second battle" << endl;
@@ -397,6 +422,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat2 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter score for third battle" << endl;
@@ -415,6 +441,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat3 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}	
 				cout << "Enter score for fourth battle" << endl;
@@ -433,6 +460,7 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat4 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
 				cout << "Enter score for fifth battle" << endl;
@@ -451,13 +479,23 @@ int main()
 					default:
 						{cout << "Wrong value entered" << endl;
 						bat5 = 0;
+						exit (EXIT_FAILURE);
 						break;}
 					}
+				score2 = (bat1+bat2+bat3+bat4+bat5);
 				if (bat1 == 0 || bat2 == 0 || bat3 == 0 || bat4 == 0 || bat5 == 0)
 					{cout << "SCORE NOT POSSIBLE SINCE WRONG VALUE WAS ENTERED!" << endl;}
 				else 
-					{cout << "PLAYER 1 YOUR TOTAL SCORE IS: " << (bat1+bat2+bat3+bat4+bat5) << endl;}
+					{cout << "PLAYER 2 YOUR TOTAL SCORE IS: " << score2 << endl;}
+				
 			
+			    if ( score1 > score2)
+					{cout << "PLAYER 1 IS THE WINNER!" << endl;}
+				else if (score2 > score1)
+					{cout << "PLAYER 2 IS THE WINNER!" << endl;}
+				else
+					{cout << "THE MATCH WAS A DRAW" << endl;}
+				
 			}
 			else 
 			{cout << "WRONG VALUE WAS ENTERED PROGRAM CANT PROCEED!" << endl;}
@@ -468,7 +506,9 @@ int main()
 
 		
 		
-		
+		default:
+			{cout << "WRONG VALUE ENTERED!" << endl;
+			break;}
 		
 		
 	
