@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	char choice;
 	cout << "[V] Visitor" << endl;
-	cout << "[U] University Staff" << endl << endl;
+	cout << "[U] University" << endl << endl;
 	cout << "Enter Choice: ";
 	cin >> choice;
 	if(choice=='V'||choice=='v') {
@@ -15,7 +15,7 @@ int main() {
 		cout << "Enter Choice: ";
 		cin >> choice;
 		if(choice=='M'||choice=='m') {
-			cout << "Your are a Male Visitor" << endl;
+			cout << "You are a Male Visitor" << endl;
 		}
 		else if(choice=='F'||choice=='f') {
 			cout << "You are a Female Visitor" << endl;
