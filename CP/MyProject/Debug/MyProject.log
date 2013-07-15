@@ -1,0 +1,7 @@
+﻿  Main.cpp
+c:\users\waseem hassan\documents\visual studio 2012\projects\myproject\myproject\main.cpp(12): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\waseem hassan\documents\visual studio 2012\projects\myproject\myproject\main.cpp(122): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+c:\users\waseem hassan\documents\visual studio 2012\projects\myproject\myproject\main.cpp(176): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+  MyProject.vcxproj -> C:\Users\Waseem Hassan\Documents\Visual Studio 2012\Projects\MyProject\Debug\MyProject.exe

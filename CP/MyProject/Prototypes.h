@@ -1,0 +1,15 @@
+void GotoXY(int,int);
+void SetWindow(int,int);
+void ChangeCursor(int,bool);
+void SetColor(int);
+void DisplayScreen();
+void InitializeRobot();
+void MoveRobot();
+void UpdateRobotLocation();
+void GenerateRandomNumbers();
+void CatchNumbers(const int,const int, const int);
+char NumberToAscii(int);
+int AsciiToNumber(char);
+void Timer(int);
+void Score(int);
+void Switchboard();
